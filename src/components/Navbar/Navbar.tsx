@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "/src/styles/Navbar.css";
 
 export function Navbar() {
   return (
@@ -7,7 +8,7 @@ export function Navbar() {
         _hello
       </Link>
       <Link className="nav__link" to="/about">
-        _about
+        _about me
       </Link>
       <Link className="nav__link" to="/projects">
         _projects

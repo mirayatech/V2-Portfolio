@@ -1,7 +1,25 @@
+import { useRef } from "react";
 import { BiChevronRight } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
+
 import "/src/styles/Hello.css";
 
-export function Hello() {
+export function Hello(): JSX.Element {
+  const navigate = useNavigate();
+
+  const inputRef = useRef<any>(null);
+
+  const getCode = () => {
+    const input = inputRef.current;
+    let inputValue = input.value;
+
+    if (inputValue === "whois") {
+      setTimeout(() => {
+        navigate("/about");
+      }, 300);
+    }
+  };
+
   return (
     <section className="hello">
       <div className="intro">
@@ -15,7 +33,12 @@ export function Hello() {
           <p>// write the code below to continue:</p>
           <label className="intro__code--wrapper">
             <BiChevronRight className="inro__code--icon" />
-            <input type="text" placeholder="whois" />
+            <input
+              ref={inputRef}
+              onChange={getCode}
+              type="text"
+              placeholder="whois"
+            />
           </label>
         </div>
       </div>

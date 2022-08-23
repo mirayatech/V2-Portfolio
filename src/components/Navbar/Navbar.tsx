@@ -1,18 +1,54 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "/src/styles/Navbar.css";
 
 export function Navbar() {
   return (
     <nav className="nav">
-      <Link className="nav__link" to="/">
+      <NavLink
+        className="nav__link"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#fff",
+                borderTop: "3px solid #ff637f",
+                backgroundColor: "#212121",
+              }
+            : { color: "#b2b2b2" }
+        }
+        to="/"
+      >
         _hello
-      </Link>
-      <Link className="nav__link" to="/about">
+      </NavLink>
+      <NavLink
+        className="nav__link"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#fff",
+                borderTop: "3px solid #ff637f",
+                backgroundColor: "#212121",
+              }
+            : { color: "#b2b2b2" }
+        }
+        to="/about"
+      >
         _about me
-      </Link>
-      <Link className="nav__link" to="/projects">
+      </NavLink>
+      <NavLink
+        className="nav__link"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#fff",
+                borderTop: "3px solid #ff637f",
+                backgroundColor: "#212121",
+              }
+            : { color: "#b2b2b2" }
+        }
+        to="/projects"
+      >
         _projects
-      </Link>
+      </NavLink>
     </nav>
   );
 }

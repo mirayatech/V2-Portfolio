@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 @import url("./styles/Navbar.css");
 @import url("./styles/Hello.css");
 @import url("./styles/About.css");
 @import url("./styles/Projects.css");
 @import url("./styles/Footer.css");
+
+:root {
+  --text: #b2b2b2;
+  --white: #fff;
+  --light-grey: #595858;
+  --grey: #212121;
+  --dark-grey: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  background-color: var(--grey);
+}

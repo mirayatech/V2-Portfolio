@@ -1,4 +1,5 @@
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import "/src/styles/Footer.css";
 export function Footer() {
   const current = new Date();
   const date = `${current.getDate()}/${
@@ -14,19 +15,28 @@ export function Footer() {
         <a
           href="https://www.linkedin.com/in/miraya-abrodi-a48382237/"
           target="_blank"
+          aria-label="Follow me on LinkedIn"
         >
-          <FiLinkedin />
+          <BsLinkedin aria-hidden="true" />
         </a>
-        <a href="https://github.com/mirayatech" target="_blank">
-          <FiGithub />
+        <a
+          href="https://github.com/mirayatech"
+          target="_blank"
+          aria-label="Follow me on GitHub"
+        >
+          <BsGithub />
         </a>
-        <a href="https://www.instagram.com/mirayatech/" target="_blank">
-          <FiInstagram />
+        <a
+          href="https://www.instagram.com/mirayatech/"
+          target="_blank"
+          aria-label="Follow me on Instagram"
+        >
+          <BsInstagram aria-hidden="true" />
         </a>
       </aside>
       <aside className="footer__time">
-        <p> {time}</p>
-        <p>{date}</p>
+        <p aria-label="current time"> {time}</p>
+        <p aria-label="current date">{date}</p>
       </aside>
     </footer>
   );

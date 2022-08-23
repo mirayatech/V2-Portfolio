@@ -50,6 +50,7 @@
   display: flex;
   align-items: center;
   margin-left: -15px;
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
 .intro__code--wrapper .inro__code--icon {
@@ -67,4 +68,8 @@
 
 .intro__code--wrapper input::placeholder {
   color: #c6a0f2c2;
+}
+
+.intro__code--wrapper:hover {
+  transform: scale(1.1);
 }

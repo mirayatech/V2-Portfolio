@@ -42,6 +42,11 @@ export function Hello(): JSX.Element {
           </label>
         </div>
       </div>
+
+      <img
+        src="https://cdn3d.iconscout.com/3d/free/thumb/responsive-device-3985350-3317738.png"
+        alt=""
+      />
     </section>
   );
 }

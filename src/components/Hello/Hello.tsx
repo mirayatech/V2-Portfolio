@@ -25,7 +25,7 @@ export function Hello(): JSX.Element {
       <div className="intro">
         <div className="intro__text">
           <h1>Hello!</h1>
-          <h2>I am Miraya</h2>
+          <h2>I'm Miraya</h2>
           <h2>front-end developer</h2>
         </div>
 
@@ -43,10 +43,7 @@ export function Hello(): JSX.Element {
         </div>
       </div>
 
-      <img
-        src="https://cdn3d.iconscout.com/3d/free/thumb/responsive-device-3985350-3317738.png"
-        alt=""
-      />
+      <img src="/src/images/desk.png" alt="Desk setup" />
     </section>
   );
 }

@@ -31,7 +31,7 @@
 }
 
 .intro .intro__text h2:nth-child(3) {
-  color: #4fadff;
+  color: var(--yellow);
   font-weight: 600;
   font-style: italic;
   font-size: calc(18 / 16 * 1rem);
@@ -55,21 +55,37 @@
 
 .intro__code--wrapper .inro__code--icon {
   font-size: calc(35 / 16 * 1rem);
-  color: #cb9efb;
+  color: var(--pink);
 }
 
 .intro__code--wrapper input {
   outline: none;
-  color: #cb9efb;
+  color: var(--pink);
   background: none;
   border: none;
   font-size: 1rem;
 }
 
 .intro__code--wrapper input::placeholder {
-  color: #c6a0f2c2;
+  color: #ff95d1d0;
 }
 
 .intro__code--wrapper:hover {
   transform: scale(1.1);
+}
+
+.hello img {
+  animation: img-1 1.5s infinite alternate;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+}
+
+@keyframes img-1 {
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }

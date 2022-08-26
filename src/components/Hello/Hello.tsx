@@ -138,7 +138,7 @@ export function Hello(): JSX.Element {
             },
           },
         }}
-        src="/src/images/desk.png"
+        src="https://cdn3d.iconscout.com/3d/premium/thumb/computer-desk-3981428-3297366.png"
         alt="Desk set"
       />
     </section>

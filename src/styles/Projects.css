@@ -23,6 +23,7 @@ a {
   align-items: center;
   position: relative;
   padding: 10px 30px 30px 30px;
+  overflow-x: hidden;
   overflow-y: scroll;
   justify-content: center;
   gap: 0 10px;

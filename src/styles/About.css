@@ -84,10 +84,10 @@
 }
 
 .folder.color-1 {
-  color: #fbe08f;
+  color: var(--yellow);
 }
 .folder.color-2 {
-  color: #96d0ff;
+  color: #8acaff;
 }
 .folder.color-3 {
   color: #b4f1b4;

@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import { BiChevronRight } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
@@ -24,12 +25,91 @@ export function Hello(): JSX.Element {
     <section className="hello">
       <div className="intro">
         <div className="intro__text">
-          <h1>Hello!</h1>
-          <h2>I'm Miraya</h2>
-          <h2>front-end developer</h2>
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                translateY: "-20px",
+                opacity: 0,
+              },
+              visible: {
+                translateY: "0px",
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                  type: "spring",
+                  duration: 0.6,
+                },
+              },
+            }}
+          >
+            Hello!
+          </motion.h1>
+          <motion.h2
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                translateY: "-10px",
+                opacity: 0,
+              },
+              visible: {
+                translateY: "0px",
+                opacity: 1,
+                transition: {
+                  delay: 0.6,
+                  type: "spring",
+                  duration: 0.6,
+                },
+              },
+            }}
+          >
+            I'm Miraya
+          </motion.h2>
+          <motion.h2
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                translateY: "-12px",
+                opacity: 0,
+              },
+              visible: {
+                translateY: "0px",
+                opacity: 1,
+                transition: {
+                  delay: 0.6,
+                  type: "spring",
+                  duration: 0.6,
+                },
+              },
+            }}
+          >
+            front-end developer
+          </motion.h2>
         </div>
 
-        <div className="intro__code">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              translateY: "-12px",
+              opacity: 0,
+            },
+            visible: {
+              translateY: "0px",
+              opacity: 1,
+              transition: {
+                delay: 0.8,
+                type: "spring",
+                duration: 0.6,
+              },
+            },
+          }}
+          className="intro__code"
+        >
           <p>// write the code below to continue:</p>
           <label className="intro__code--wrapper">
             <BiChevronRight className="inro__code--icon" />
@@ -40,10 +120,27 @@ export function Hello(): JSX.Element {
               placeholder="whois"
             />
           </label>
-        </div>
+        </motion.div>
       </div>
 
-      <img src="/src/images/desk.png" alt="Desk setup" />
+      <motion.img
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            opacity: 0,
+          },
+          visible: {
+            opacity: 1,
+            transition: {
+              delay: 0.4,
+              duration: 0.4,
+            },
+          },
+        }}
+        src="/src/images/desk.png"
+        alt="Desk set"
+      />
     </section>
   );
 }

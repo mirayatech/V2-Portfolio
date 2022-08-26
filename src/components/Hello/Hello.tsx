@@ -95,13 +95,16 @@ export function Hello(): JSX.Element {
           animate="visible"
           variants={{
             hidden: {
+              translateY: "-20px",
               opacity: 0,
             },
             visible: {
+              translateY: "0px",
               opacity: 1,
               transition: {
-                delay: 0.1,
-                duration: 0.4,
+                delay: 0.8,
+                type: "spring",
+                duration: 0.6,
               },
             },
           }}
@@ -122,7 +125,7 @@ export function Hello(): JSX.Element {
               translateY: "0px",
               opacity: 1,
               transition: {
-                delay: 0.8,
+                delay: 1,
                 type: "spring",
                 duration: 0.6,
               },

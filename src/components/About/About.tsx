@@ -1,4 +1,9 @@
 import { motion } from "framer-motion";
+import { BsFillMarkdownFill } from "react-icons/bs";
+import { FiChevronDown } from "react-icons/fi";
+
+import { FaFolder } from "react-icons/fa";
+
 import "../../styles/About.css";
 
 export function About() {
@@ -158,6 +163,151 @@ export function About() {
           </p>
         </motion.div>
       </div>
+
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            x: "80px",
+            opacity: 0,
+          },
+          visible: {
+            x: "0",
+            opacity: 1,
+            transition: {
+              type: "spring",
+              delay: 2,
+            },
+          },
+        }}
+        className="about__secondary"
+      >
+        <h2>Explorer</h2>
+        <div className="wrapper-1">
+          <span className="arrow-down">
+            <FiChevronDown />
+          </span>
+          <p>Intrest & Skills</p>
+        </div>
+
+        <div className="wrapper-2">
+          <div className="title">
+            <span className="arrow-down">
+              <FiChevronDown />
+            </span>
+            <span className="folder color-1">
+              <FaFolder />
+            </span>
+            <p>Language</p>
+          </div>
+
+          <div className="list">
+            {" "}
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; css.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; html.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; javascript.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; typescript.md
+            </p>
+          </div>
+        </div>
+
+        <div className="wrapper-2">
+          <div className="title">
+            <span className="arrow-down">
+              <FiChevronDown />
+            </span>
+            <span className="folder color-2">
+              <FaFolder />
+            </span>
+            <p>Frameworks & Libraries</p>
+          </div>
+
+          <div className="list">
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; react.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; sass.md
+            </p>{" "}
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; tailwind.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; material-ui.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; framer-motion.md
+            </p>
+          </div>
+        </div>
+
+        <div className="wrapper-2">
+          <div className="title">
+            <span className="arrow-down">
+              <FiChevronDown />
+            </span>
+            <span className="folder color-3">
+              <FaFolder />
+            </span>
+            <p>Extra</p>
+          </div>
+
+          <div className=" list">
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; git.md
+            </p>
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; accessibility.md
+            </p>
+          </div>
+        </div>
+
+        <div className="wrapper-2">
+          <div className="title">
+            <span className="arrow-down">
+              <FiChevronDown />
+            </span>
+            <span className="folder color-4">
+              <FaFolder />
+            </span>
+            <p>Free Time</p>
+          </div>
+
+          <div className="list">
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; reading.md
+            </p>{" "}
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; work-out.md
+            </p>{" "}
+            <p>
+              <BsFillMarkdownFill />
+              &nbsp; building-side-projects.md
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }

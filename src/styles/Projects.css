@@ -22,16 +22,16 @@ a {
   display: grid;
   align-items: center;
   position: relative;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   overflow-y: scroll;
   justify-content: center;
   gap: 0 10px;
   grid-template-columns: repeat(auto-fit, 300px);
 }
 
-.projects .projects__title {
-  margin-top: -52px;
-  padding-bottom: 15px;
+.projects__title {
+  text-align: center;
+  padding: 30px 0;
   font-weight: 500;
 
   font-size: calc(20 / 16 * 1rem);
@@ -40,6 +40,7 @@ a {
 
 .project {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   border: 1px solid var(--light-grey);
   border-radius: 5px;
@@ -97,4 +98,34 @@ a .project:hover {
   margin-top: auto;
   color: var(--text);
   font-size: calc(14 / 16 * 1rem);
+}
+
+@media screen and (max-width: 1290px) {
+  .project {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-height: 875px) {
+  .projects {
+    height: 79vh;
+  }
+}
+
+@media screen and (max-height: 810px) {
+  .projects {
+    height: 76vh;
+  }
+}
+
+@media screen and (max-height: 719px) {
+  .projects {
+    height: 74vh;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .projects {
+    height: 71vh;
+  }
 }

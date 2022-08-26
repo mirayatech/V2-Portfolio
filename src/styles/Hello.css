@@ -76,19 +76,3 @@
 .intro__code--wrapper:hover {
   transform: scale(1.1);
 }
-
-.hello img {
-  animation: img-1 1.5s infinite alternate;
-  animation-timing-function: linear;
-  transform-origin: bottom;
-}
-
-@keyframes img-1 {
-  from {
-    transform: translateY(10px);
-  }
-
-  to {
-    transform: translateY(-10px);
-  }
-}

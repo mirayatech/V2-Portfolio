@@ -78,7 +78,7 @@
 
 /* SECONDARY  */
 
-.arrow-down {
+.arrow {
   padding-right: 5px;
   font-size: 1rem;
 }
@@ -105,14 +105,14 @@
 }
 
 .about .about__secondary h2 {
-  font-size: calc(24 / 16 * 1rem);
-  padding-bottom: 10px;
+  font-size: calc(22 / 16 * 1rem);
+  padding-left: 20px;
+  padding-bottom: 5px;
   color: var(--white);
 }
-
-.about .about__secondary .wrapper-1 {
+/* .about .about__secondary .wrapper-1 {
   padding-bottom: 5px;
-}
+} */
 
 .about .about__secondary .wrapper-1 {
   display: flex;
@@ -126,6 +126,7 @@
 }
 
 .about .about__secondary .wrapper-2 .title {
+  cursor: pointer;
   color: var(--white);
   display: flex;
 }

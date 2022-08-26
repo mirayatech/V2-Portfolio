@@ -3,32 +3,34 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 export function Projects() {
   return (
     <div className="projects">
-      <a href="https://github.com/mirayatech/E-Commerce" target="_blank">
-        <div className="project">
-          <div className="title">
-            <h2>E-Commerce</h2>
-            <div className="title__wrapper">
-              <a
-                href="https://github.com/mirayatech/E-Commerce"
-                target="_blank"
-              >
-                <FiGithub />
-              </a>{" "}
-              <a href="https://mystore-ecommerce.vercel.app/" target="_blank">
-                <FiExternalLink />
-              </a>{" "}
+      <div className="first__project">
+        <h1 className="projects__title">//Top Projects</h1>
+        <a href="https://github.com/mirayatech/E-Commerce" target="_blank">
+          <div className="project">
+            <div className="title">
+              <h2>E-Commerce</h2>
+              <div className="title__wrapper">
+                <a
+                  href="https://github.com/mirayatech/E-Commerce"
+                  target="_blank"
+                >
+                  <FiGithub />
+                </a>
+                <a href="https://mystore-ecommerce.vercel.app/" target="_blank">
+                  <FiExternalLink />
+                </a>
+              </div>
+            </div>
+            <p>
+              A fully functional e-commerce application with stripe payment
+              gateway.
+            </p>
+            <div className="language">
+              React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;CSS
             </div>
           </div>
-          <p>
-            A fully functional e-commerce application with stripe payment
-            gateway.
-          </p>
-          <div className="language">
-            React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;CSS
-          </div>
-        </div>
-      </a>
-
+        </a>
+      </div>
       <a href="https://github.com/mirayatech/Netflix-Clone" target="_blank">
         <div className="project">
           <div className="title">
@@ -39,10 +41,10 @@ export function Projects() {
                 target="_blank"
               >
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://netflix-mirayatech.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -62,7 +64,7 @@ export function Projects() {
             <div className="title__wrapper">
               <a href="https://github.com/mirayatech/Note-App" target="_blank">
                 <FiGithub />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -85,10 +87,10 @@ export function Projects() {
                 target="_blank"
               >
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://ghfinder-phi.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -108,10 +110,10 @@ export function Projects() {
             <div className="title__wrapper">
               <a href="https://github.com/mirayatech/Movie-App" target="_blank">
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://movieflix-navy.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -134,10 +136,10 @@ export function Projects() {
                 target="_blank"
               >
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://anime-quotes-rho.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -160,10 +162,10 @@ export function Projects() {
                 target="_blank"
               >
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://toxo-two.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>
@@ -183,10 +185,10 @@ export function Projects() {
             <div className="title__wrapper">
               <a href="https://github.com/mirayatech/Mitsuki" target="_blank">
                 <FiGithub />
-              </a>{" "}
+              </a>
               <a href="https://mitsuki-psi.vercel.app/" target="_blank">
                 <FiExternalLink />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <p>A way for people to manage their tasks and take some notes.</p>

@@ -90,6 +90,12 @@ export function Hello(): JSX.Element {
           </motion.h2>
         </div>
 
+        <img
+          className="image-2"
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/computer-desk-3981428-3297366.png"
+          alt=""
+        />
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -124,6 +130,7 @@ export function Hello(): JSX.Element {
       </div>
 
       <motion.img
+        className="image-1"
         initial="hidden"
         animate="visible"
         variants={{

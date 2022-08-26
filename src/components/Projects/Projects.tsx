@@ -1,9 +1,27 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export function Projects() {
   return (
     <div className="projects">
-      <div className="first__project">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.2,
+            },
+          },
+        }}
+        className="first__project"
+      >
         <h1 className="projects__title">//Top Projects</h1>
         <a href="https://github.com/mirayatech/E-Commerce" target="_blank">
           <div className="project">
@@ -30,8 +48,26 @@ export function Projects() {
             </div>
           </div>
         </a>
-      </div>
-      <a href="https://github.com/mirayatech/Netflix-Clone" target="_blank">
+      </motion.div>
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.4,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Netflix-Clone"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Netflix Clone</h2>
@@ -55,9 +91,27 @@ export function Projects() {
             React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;API&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Note-App" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.6,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Note-App"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Note App</h2>
@@ -75,9 +129,27 @@ export function Projects() {
             React&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;VS-Code
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Github-Finder" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.8,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Github-Finder"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Github Finder</h2>
@@ -101,9 +173,27 @@ export function Projects() {
             JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Movie-App" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Movie-App"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Movie App</h2>
@@ -124,9 +214,27 @@ export function Projects() {
             JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Anime-Quote" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1.2,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Anime-Quote"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Anime Quote</h2>
@@ -150,9 +258,27 @@ export function Projects() {
             JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Tic-Tac-Toe" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1.4,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Tic-Tac-Toe"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Tic Tac Toe</h2>
@@ -176,9 +302,27 @@ export function Projects() {
             JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
 
-      <a href="https://github.com/mirayatech/Mitsuki" target="_blank">
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1.6,
+            },
+          },
+        }}
+        href="https://github.com/mirayatech/Mitsuki"
+        target="_blank"
+      >
         <div className="project">
           <div className="title">
             <h2>Mitsuki</h2>
@@ -196,7 +340,7 @@ export function Projects() {
             JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS
           </div>
         </div>
-      </a>
+      </motion.a>
     </div>
   );
 }

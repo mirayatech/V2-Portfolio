@@ -23,6 +23,7 @@
 body {
   display: flex;
   font-size: 1rem;
+  user-select: none;
   flex-direction: column;
   background-color: var(--grey);
 }

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { BsFillMarkdownFill } from "react-icons/bs";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 
@@ -8,10 +8,10 @@ import "../../styles/About.css";
 import { useState } from "react";
 
 export function About() {
-  const [isOpenOne, setIsOpenOne] = useState(false);
-  const [isOpenTwo, setIsOpenTwo] = useState(false);
-  const [isOpenThree, setIsOpenThree] = useState(false);
-  const [isOpenFour, setIsOpenFour] = useState(false);
+  const [showLanguage, setShowlanguage] = useState(true);
+  const [showFrameLib, setShowFrameLib] = useState(false);
+  const [showExtra, setShowExtra] = useState(false);
+  const [showFreeTime, setShowFreeTime] = useState(false);
 
   return (
     <div className="about">
@@ -198,44 +198,73 @@ export function About() {
         </div>
 
         <div className="wrapper-2">
-          <div onClick={() => setIsOpenOne(!isOpenOne)} className="title">
+          <div onClick={() => setShowlanguage(!showLanguage)} className="title">
             <span className="arrow">
-              {isOpenOne ? <FiChevronRight /> : <FiChevronDown />}
+              {showLanguage ? <FiChevronDown /> : <FiChevronRight />}
             </span>
             <span className="folder color-1">
               <FaFolder />
             </span>
             <p>Language</p>
           </div>
-          {isOpenOne ? (
-            <div className="list"></div>
-          ) : (
-            <div className="list">
-              {" "}
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; css.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; html.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; javascript.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; typescript.md
-              </p>
-            </div>
-          )}
+          <AnimatePresence>
+            {showLanguage && (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="go"
+                variants={{
+                  hidden: {
+                    y: "-20px",
+                    opacity: 0,
+                  },
+                  visible: {
+                    y: "0",
+                    opacity: 1,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.5,
+                    },
+                  },
+                  go: {
+                    y: "-20px",
+                    opacity: 0,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.3,
+                    },
+                  },
+                }}
+                className="list"
+              >
+                {" "}
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; html.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; css.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; javascript.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; typescript.md
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="wrapper-2">
-          <div onClick={() => setIsOpenTwo(!isOpenTwo)} className="title">
+          <div onClick={() => setShowFrameLib(!showFrameLib)} className="title">
             <span className="arrow">
-              {isOpenTwo ? <FiChevronDown /> : <FiChevronRight />}
+              {showFrameLib ? <FiChevronDown /> : <FiChevronRight />}
             </span>
             <span className="folder color-2">
               <FaFolder />
@@ -243,82 +272,178 @@ export function About() {
             <p>Frameworks & Libraries</p>
           </div>
 
-          {isOpenTwo && (
-            <div className="list">
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; react.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; sass.md
-              </p>{" "}
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; tailwind.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; material-ui.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; framer-motion.md
-              </p>
-            </div>
-          )}
+          <AnimatePresence>
+            {showFrameLib && (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="go"
+                variants={{
+                  hidden: {
+                    y: "-20px",
+                    opacity: 0,
+                  },
+                  visible: {
+                    y: "0",
+                    opacity: 1,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.5,
+                    },
+                  },
+                  go: {
+                    y: "-20px",
+                    opacity: 0,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.3,
+                    },
+                  },
+                }}
+                className="list"
+              >
+                {" "}
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; react.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; sass.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; tailwind.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; material-ui.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; framer-motion.md
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="wrapper-2">
-          <div onClick={() => setIsOpenThree(!isOpenThree)} className="title">
+          <div onClick={() => setShowExtra(!showExtra)} className="title">
             <span className="arrow">
-              {isOpenThree ? <FiChevronDown /> : <FiChevronRight />}
+              {showExtra ? <FiChevronDown /> : <FiChevronRight />}
             </span>
             <span className="folder color-3">
               <FaFolder />
             </span>
             <p>Extra</p>
           </div>
-          {isOpenThree && (
-            <div className=" list">
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; git.md
-              </p>
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; accessibility.md
-              </p>
-            </div>
-          )}
+          <AnimatePresence>
+            {showExtra && (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="go"
+                variants={{
+                  hidden: {
+                    y: "-20px",
+                    opacity: 0,
+                  },
+                  visible: {
+                    y: "0",
+                    opacity: 1,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.5,
+                    },
+                  },
+                  go: {
+                    y: "-20px",
+                    opacity: 0,
+                    transition: {
+                      type: "spring",
+                      delay: 0.2,
+                      duration: 0.3,
+                    },
+                  },
+                }}
+                className="list"
+              >
+                {" "}
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; git.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; accessibility.md
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="wrapper-2">
-          <div onClick={() => setIsOpenFour(!isOpenFour)} className="title">
+          <div onClick={() => setShowFreeTime(!showFreeTime)} className="title">
             <span className="arrow">
-              {isOpenFour ? <FiChevronDown /> : <FiChevronRight />}
+              {showFreeTime ? <FiChevronDown /> : <FiChevronRight />}
             </span>
             <span className="folder color-4">
               <FaFolder />
             </span>
             <p>Free Time</p>
           </div>
-          {isOpenFour && (
-            <div className="list">
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; reading.md
-              </p>{" "}
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; work-out.md
-              </p>{" "}
-              <p>
-                <BsFillMarkdownFill />
-                &nbsp; building-side-projects.md
-              </p>
-            </div>
-          )}
+          <AnimatePresence>
+            {showFreeTime && (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="go"
+                variants={{
+                  hidden: {
+                    y: "-20px",
+                    opacity: 0,
+                  },
+                  visible: {
+                    y: "0",
+                    opacity: 1,
+                    transition: {
+                      type: "spring",
+                      delay: 0.1,
+                      duration: 0.5,
+                    },
+                  },
+                  go: {
+                    y: "-20px",
+                    opacity: 0,
+                    transition: {
+                      type: "spring",
+                      delay: 0.1,
+                      duration: 0.3,
+                    },
+                  },
+                }}
+                className="list"
+              >
+                {" "}
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; reading.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; work-out.md
+                </p>
+                <p>
+                  <BsFillMarkdownFill />
+                  &nbsp; building-side-projects.md
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </motion.div>
     </div>

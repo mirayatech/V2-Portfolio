@@ -10,7 +10,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #ff637f",
+                borderTop: "3px solid #7D8ADA",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }
@@ -25,7 +25,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #ff637f",
+                borderTop: "3px solid #7D8ADA",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }
@@ -40,7 +40,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #ff637f",
+                borderTop: "3px solid #7D8ADA",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }

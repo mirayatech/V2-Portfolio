@@ -90,7 +90,21 @@ export function Hello(): JSX.Element {
           </motion.h2>
         </div>
 
-        <img
+        <motion.img
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 0.1,
+                duration: 0.4,
+              },
+            },
+          }}
           className="image-2"
           src="https://cdn3d.iconscout.com/3d/premium/thumb/computer-desk-3981428-3297366.png"
           alt=""

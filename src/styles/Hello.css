@@ -76,3 +76,46 @@
 .intro__code--wrapper:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 930px) {
+  .hello img {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hello {
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hello img {
+    max-width: 250px;
+  }
+
+  .intro {
+    height: 25vh;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-height: 825px) {
+  .hello {
+    height: 89vh;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .hello {
+    height: 87vh;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .hello {
+    height: 85vh;
+  }
+}

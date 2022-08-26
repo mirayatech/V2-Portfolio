@@ -1,6 +1,7 @@
 .about {
   height: 91vh;
   display: flex;
+  overflow: hidden;
   color: var(--text);
   position: relative;
   align-items: center;
@@ -73,4 +74,78 @@
 .about .about__primary .about__text p {
   font-size: calc(18 / 16 * 1rem);
   padding-bottom: 15px;
+}
+
+/* SECONDARY  */
+
+.arrow-down {
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.folder.color-1 {
+  color: #fbe08f;
+}
+.folder.color-2 {
+  color: #96d0ff;
+}
+.folder.color-3 {
+  color: #b4f1b4;
+}
+.folder.color-4 {
+  color: #ffb8b0;
+}
+
+.about .about__secondary {
+  margin-bottom: -16px;
+  background: #131313;
+  padding: 1rem;
+  height: 89vh;
+  width: 400px;
+}
+
+.about .about__secondary h2 {
+  font-size: calc(24 / 16 * 1rem);
+  padding-bottom: 10px;
+  color: var(--white);
+}
+
+.about .about__secondary .wrapper-1 {
+  padding-bottom: 5px;
+}
+
+.about .about__secondary .wrapper-1 {
+  display: flex;
+  color: var(--white);
+}
+
+.about .about__secondary .wrapper-1 p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.about .about__secondary .wrapper-2 .title {
+  color: var(--white);
+  display: flex;
+}
+
+.about .about__secondary .wrapper-2 .title .folder {
+  display: flex;
+  padding-right: 5px;
+  align-items: center;
+  font-size: calc(20 / 16 * 1rem);
+}
+
+.about .about__secondary .wrapper-2 .title .folder,
+.about .about__secondary .wrapper-2 .title p {
+  font-size: calc(18 / 16 * 1rem);
+}
+
+.about .about__secondary .wrapper-2 .list p {
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-size: calc(18 / 16 * 1rem);
 }

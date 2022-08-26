@@ -56,21 +56,21 @@
 
 .intro__code--wrapper .inro__code--icon {
   font-size: calc(35 / 16 * 1rem);
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .intro__code--wrapper input {
   font-weight: 600;
 
   outline: none;
-  color: var(--pink);
+  color: var(--blue);
   background: none;
   border: none;
   font-size: 1rem;
 }
 
 .intro__code--wrapper input::placeholder {
-  color: #ff95d1d0;
+  color: #79c1ffbc;
 }
 
 .intro__code--wrapper:hover {

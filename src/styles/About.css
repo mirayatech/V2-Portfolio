@@ -1,0 +1,76 @@
+.about {
+  height: 91vh;
+  display: flex;
+  color: var(--text);
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about__primary {
+  height: 500px;
+  display: flex;
+  margin-left: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.about .about__primary .line__numbers {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(-370px) translateZ(0px);
+}
+
+.about .about__primary .line__numbers .number {
+  line-height: 1.7;
+  color: white;
+}
+
+.about .about__primary .large__line {
+  width: 1px;
+  height: 450px;
+  margin-left: 1rem;
+  align-self: center;
+  background-image: linear-gradient(180deg, transparent, #595858, transparent);
+}
+
+.about .about__primary .wrapper {
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.about .about__primary .wrapper .small__line {
+  align-self: center;
+  width: 1px;
+  height: 230px;
+  background-color: var(--light-grey);
+}
+
+.about .about__primary .wrapper p {
+  font-weight: 300;
+  font-size: calc(18 / 16 * 1rem);
+}
+
+.about .about__primary .wrapper p:first-child {
+  margin-bottom: -10px;
+}
+
+.about .about__primary .wrapper p:last-child {
+  margin-top: -10px;
+}
+
+.about .about__primary .about__text {
+  align-self: center;
+  width: 450px;
+}
+
+.about .about__primary .about__text h1 {
+  font-weight: 700;
+  font-size: calc(20 / 16 * 1rem);
+}
+
+.about .about__primary .about__text p {
+  font-size: calc(18 / 16 * 1rem);
+  padding-bottom: 15px;
+}

@@ -131,6 +131,38 @@ export function Hello(): JSX.Element {
               },
             },
           }}
+          className="intro__code mobile-view"
+        >
+          <p>// write the code below to continue:</p>
+          <label className="intro__code--wrapper">
+            <BiChevronRight className="inro__code--icon" />
+            <input
+              ref={inputRef}
+              onChange={getCode}
+              type="text"
+              placeholder="whois"
+            />
+          </label>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              translateY: "-12px",
+              opacity: 0,
+            },
+            visible: {
+              translateY: "0px",
+              opacity: 1,
+              transition: {
+                delay: 0.8,
+                type: "spring",
+                duration: 0.6,
+              },
+            },
+          }}
           className="intro__code"
         >
           <p>// write the code below to continue:</p>

@@ -262,8 +262,9 @@ export function Projects() {
               </div>
             </div>
             <p>
-              Random Amine Quote Generator used to generate random quotes. Each
-              time you click on the button, you’ll get a new anime quote.
+              Each time you click on the new quote button, you’ll get a new
+              anime quote. You can also convert a quote to speech, copy a quote,
+              or share a quote on Twitter by clicking the given button.
             </p>
             <div className="language">
               JavaScript&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS

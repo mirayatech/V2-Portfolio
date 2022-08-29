@@ -101,6 +101,40 @@ a .project:hover {
   font-size: calc(14 / 16 * 1rem);
 }
 
+@media screen and (min-width: 1200px) {
+  .projects {
+    height: 78vh;
+  }
+
+  .projects__title {
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  .project .title {
+    padding-bottom: 10px;
+  }
+
+  .project .title h2 {
+    font-size: calc(22 / 16 * 1rem);
+  }
+
+  .project .title .title__wrapper a {
+    font-size: calc(21 / 16 * 1rem);
+  }
+
+  .project .title .title__wrapper a:nth-child(2) {
+    font-size: calc(22 / 16 * 1rem);
+  }
+
+  .project p {
+    font-size: 1.1rem;
+  }
+
+  .project .language {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 1290px) {
   .project {
     margin-bottom: 30px;

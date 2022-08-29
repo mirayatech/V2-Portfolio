@@ -87,13 +87,13 @@
   color: var(--yellow);
 }
 .folder.color-2 {
-  color: #8acaff;
+  color: #66bddc;
 }
 .folder.color-3 {
-  color: #b4f1b4;
+  color: #e67ab1;
 }
 .folder.color-4 {
-  color: #ffb8b0;
+  color: var(--white);
 }
 
 .about .about__secondary,
@@ -185,6 +185,74 @@
 .hamburger.menuClose {
   display: inline-block;
   transform: translateX(400px);
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    height: 90vh;
+  }
+
+  .about .about__primary {
+    height: 500px;
+  }
+
+  .about .about__primary .line__numbers .number {
+    line-height: 1.35;
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .about .about__primary .wrapper .small__line {
+    height: 250px;
+  }
+
+  .about .about__primary .wrapper p {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .about .about__primary .wrapper p:first-child {
+    margin-bottom: -10px;
+  }
+
+  .about .about__primary .wrapper p:last-child {
+    margin-top: -10px;
+  }
+
+  .about .about__primary .about__text {
+    width: 500px;
+  }
+
+  .about .about__primary .about__text h1 {
+    font-size: calc(22 / 16 * 1rem);
+  }
+
+  .about .about__primary .about__text p {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  /* SECONDARY  */
+
+  .arrow {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .about .about__secondary h2 {
+    font-size: calc(28 / 16 * 1rem);
+  }
+
+  .about .about__secondary .wrapper-1 p,
+  .about .about__secondary--hamburger .wrapper-1 p {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .about .about__secondary .wrapper-2 .title .folder,
+  .about .about__secondary .wrapper-2 .title p {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .about .about__secondary .wrapper-2 .list p,
+  .about .about__secondary--hamburger .wrapper-2 .list p {
+    font-size: calc(20 / 16 * 1rem);
+  }
 }
 
 @media screen and (max-width: 820px) {

@@ -85,6 +85,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hello {
+    height: 90vh;
+  }
+
   .intro {
     height: 32vh;
   }

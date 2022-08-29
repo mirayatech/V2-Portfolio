@@ -40,6 +40,23 @@
   border-left: 1px solid var(--light-grey);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__socials p,
+  .footer__socials a {
+    display: flex;
+    font-size: 1.3rem;
+  }
+
+  .footer__socials a:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  .footer__time p:first-child,
+  .footer__time p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 410px) {
   .footer__socials p,
   .footer__socials a {

@@ -84,6 +84,37 @@
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 1200px) {
+  .intro {
+    height: 32vh;
+  }
+
+  .intro .intro__text h1 {
+    font-size: calc(23 / 16 * 1rem);
+  }
+
+  .intro .intro__text h2 {
+    line-height: 1.5;
+    font-size: calc(55 / 16 * 1rem);
+  }
+
+  .intro .intro__text h2:nth-child(3) {
+    font-size: calc(23 / 16 * 1rem);
+  }
+
+  .intro__code p {
+    font-size: calc(23 / 16 * 1rem);
+  }
+
+  .intro__code--wrapper input {
+    font-size: calc(23 / 16 * 1rem);
+  }
+
+  .hello .image-1 {
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .hello img {
     max-width: 350px;

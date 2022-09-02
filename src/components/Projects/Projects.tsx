@@ -97,7 +97,6 @@ export function Projects() {
             </div>
           </div>
         </motion.a>
-
         <motion.a
           initial="hidden"
           animate="visible"
@@ -111,6 +110,48 @@ export function Projects() {
               opacity: 1,
               transition: {
                 delay: 0.6,
+              },
+            },
+          }}
+          href="https://github.com/mirayatech/Blog-App"
+          target="_blank"
+        >
+          <div className="project">
+            <div className="title">
+              <h2>Blog App</h2>
+              <div className="title__wrapper">
+                <a
+                  href="https://github.com/mirayatech/Blog-App"
+                  target="_blank"
+                >
+                  <FiGithub />
+                </a>
+              </div>
+            </div>
+            <p>
+              User must log in with google to create a post. Users can like
+              other people's blog posts but not their own and can also delete
+              their own blogs but not others.
+            </p>
+            <div className="language">
+              React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;Firebase&nbsp;&nbsp;&nbsp;Tailwind
+            </div>
+          </div>
+        </motion.a>
+
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.8,
               },
             },
           }}
@@ -151,7 +192,7 @@ export function Projects() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 0.8,
+                delay: 1,
               },
             },
           }}
@@ -195,7 +236,7 @@ export function Projects() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1,
+                delay: 1.2,
               },
             },
           }}
@@ -239,7 +280,7 @@ export function Projects() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1.2,
+                delay: 1.4,
               },
             },
           }}
@@ -284,7 +325,7 @@ export function Projects() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1.4,
+                delay: 1.6,
               },
             },
           }}
@@ -328,7 +369,7 @@ export function Projects() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1.6,
+                delay: 1.8,
               },
             },
           }}

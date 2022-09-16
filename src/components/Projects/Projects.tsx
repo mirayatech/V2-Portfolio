@@ -1,3 +1,4 @@
+import React from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -46,7 +47,7 @@ export function Projects() {
               gateway.
             </p>
             <div className="language">
-              React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;CSS
+              React&nbsp;&nbsp;&nbsp;TypeScript&nbsp;&nbsp;&nbsp;Material-UI
             </div>
           </div>
         </motion.a>
@@ -89,7 +90,7 @@ export function Projects() {
               </div>
             </div>
             <p>
-              Netflix clone build with react and typescript. User are able to
+              Netflix clone built with react and typescript. User are able to
               mute and unmute the trailer video.
             </p>
             <div className="language">

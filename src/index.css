@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
-@import url("./styles/Navbar.css");
-@import url("./styles/Hello.css");
-@import url("./styles/About.css");
-@import url("./styles/Projects.css");
-@import url("./styles/Footer.css");
+@import url("./components/Navbar/Navbar.css");
+@import url("./components/Hello/Hello.css");
+@import url("./components/About/About.css");
+@import url("./components/Projects/Projects.css");
+@import url("./components/Footer/Footer.css");
 
 :root {
   --text: #b2b2b2;

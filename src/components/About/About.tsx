@@ -4,8 +4,8 @@ import { FiChevronDown, FiChevronRight, FiMenu, FiX } from "react-icons/fi";
 
 import { FaFolder } from "react-icons/fa";
 
-import "../../styles/About.css";
 import { useState } from "react";
+import React from "react";
 
 export function About() {
   const [showExtra, setShowExtra] = useState(false);

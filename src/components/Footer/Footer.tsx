@@ -1,5 +1,5 @@
+import React from "react";
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
-import "/src/styles/Footer.css";
 export function Footer() {
   const current = new Date();
   const date = `${current.getDate()}/${

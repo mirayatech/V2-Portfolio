@@ -1,5 +1,5 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
-import "/src/styles/Navbar.css";
 
 export function Navbar() {
   return (
@@ -10,7 +10,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #6E7CD4",
+                borderTop: "3px solid #a7dcff",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }
@@ -25,7 +25,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #6E7CD4",
+                borderTop: "3px solid #a7dcff",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }
@@ -40,7 +40,7 @@ export function Navbar() {
           isActive
             ? {
                 color: "#fff",
-                borderTop: "3px solid #6E7CD4",
+                borderTop: "3px solid #a7dcff",
                 backgroundColor: "#212121",
               }
             : { color: "#b2b2b2" }

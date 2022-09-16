@@ -1,9 +1,8 @@
+import React from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { BiChevronRight } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-
-import "/src/styles/Hello.css";
 
 export function Hello(): JSX.Element {
   const navigate = useNavigate();
@@ -109,7 +108,7 @@ export function Hello(): JSX.Element {
             },
           }}
           className="image-2"
-          src="https://cdn3d.iconscout.com/3d/premium/thumb/computer-desk-3981428-3297366.png"
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/pc-5296985-4455575.png"
           alt=""
         />
 
@@ -194,7 +193,7 @@ export function Hello(): JSX.Element {
             },
           },
         }}
-        src="https://cdn3d.iconscout.com/3d/premium/thumb/computer-desk-3981428-3297366.png"
+        src="https://cdn3d.iconscout.com/3d/premium/thumb/pc-5296985-4455575.png"
         alt="Desk set"
       />
     </section>

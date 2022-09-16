@@ -12,6 +12,7 @@ My personal website with a theme inspired by `VS-Code`
 * `Framer Motion`
 
 
+
 ## Preview
 
 ### 📎 Live: https://mirayatech.vercel.app/

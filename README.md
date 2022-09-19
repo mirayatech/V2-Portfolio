@@ -1,5 +1,5 @@
-## 🌐 - My-Protfolio
-My personal website with a theme inspired by `VS-Code`
+### 🌐 - V3 Protfolio
+Third version of my personal website with a theme inspired by `VS-Code`.
 
 
 ## 🛠️ - Dependencies 
